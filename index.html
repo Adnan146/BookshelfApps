@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookshelf Apps</title>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="all">
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    <div class="main">
+        <div class="from">
+            <h2 class="title">Tambah Buku</h2>
+            <form id="formData" action="" method="post">
+                <div class="group">
+                    <input type="text" name="judul" placeholder="" id="judul" required>
+                    <label for="judul">Nama Judul</label>
+                </div>
+                <div class="row">
+                    <div class="group">
+                        <input placeholder="" name="penulis" type="text" id="penulis" required>
+                        <label for="penulis">Nama penulis</label>
+                    </div>
+                    <div class="group">
+                        <input name="tahun" placeholder="" type="number" id="tahun" required>
+                        <label for="tahun">Tahun Terbit</label>
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="isRead" id="isRead" placeholder="">
+                    <label for="isRead">Telah dibaca</label>
+                </div>
+                <button type="submit" class="btn-submit">Tambahkan Buku</button>
+            </form>
+        </div>
+            <div class="cari">
+                <h2 class="title">Cari Buki</h2>
+                    <form id="Search" action="" method="post">
+                        <div class="group">
+                            <input type="text" name="pencarian" id="pencarian" placeholder="">
+                            <label for="pencarian">Cari Buku</label>
+                        </div>
+                        <div class="bottom">
+                            <button type="reset" class="btn-reset">Reset</button>
+                            <button type="submit" class="btn-cari">Cari</button>
+                        </div>
+                    </form>
+            </div>
+
+    </div>
+    <div class="bottom1">
+        <div class="left">
+            <h2 class="title">Belum Dibaca</h2>
+            <div id="belumDibaca"></div>
+        </div>
+        <div class="right">
+            <h2 class="title">Sudah Dibaca</h2>
+            <div id="sudahDibaca"></div>
+        </div>
+    </div>
+    <footer>
+        <span>Biodata Pribadi &#169; 2023, Zuzlifatul Adnan</span>
+        <ul>
+            <li><a href="https://www.instagram.com/fourz_adnan">Instagram</a></li>
+            <li><a href="biodata.html">Profile</a></li>
+        </ul>
+        
+    </footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
